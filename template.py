@@ -8,14 +8,12 @@ project_name = "funnel_analysis"
 
 list_of_files = [
 
-    # GitHub Actions
+    
     ".github/workflows/.gitkeep",
 
-    # Source package
     f"src/{project_name}/__init__.py",
     "src/__init__.py",
 
-    # Core scripts (run in order)
     "src/load_clean.py",
     "src/funnel_metrics.py",
     "src/channel_analysis.py",
