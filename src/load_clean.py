@@ -41,6 +41,7 @@ def drop_columns(df):
 def fix_missing(df):
     
     df["origin"] = df["origin"].fillna("Unknown")
+    df["origin"] = df["origin"].str.strip().str.lower()
     logging.info("Filled 60 missing origins with 'Unknown'")
     return df
 
